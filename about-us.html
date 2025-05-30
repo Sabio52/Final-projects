@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    html{
+        box-sizing: inherit;
+    }
+    *, *:before, *:after {
+        box-sizing: inherit;
+    }
+    .column {
+        flex: 0 0 calc(33.33% - 20px);
+        margin: 10px;
+        padding: 0 10px;
+        }
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        width: 100%;
+        padding: 15px;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-us {
+        text-align: center;
+        padding: 20px;
+        background-color: dimgray;
+        color: white;
+        font-family: Arial, sans-serif;
+    }
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+    button {
+        background-color: #fa8704;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        width: 100%;
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px 4px;
+        justify-content: space-around;
+    }
+</style>
+
+</head>
+<body>
+    <div class="about-us">
+        <h1>About us</h1>
+        <p>We are a team of passionate developers dedicated to creating innovative solutions that make a difference in the world. Our mission is to leverage technology to solve real-world problems and improve people's lives.</p>
+        <p>Resize the browser window to see if the page is responsive</p>
+    </div>
+    
+    <h2>Our team</h2>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="image.jpeg" alt="Jane">
+                <div class="container">
+                </div>
+                <h2>Jane Doe</h2>
+                <p>Lead Developer with a passion for front-end technologies.</p>
+                <p>Jane@example.com</p>
+                <button>contact us</button>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <img src="image.jpeg" alt="John">
+                <div class="container">
+                </div>
+                <h2>John Smith</h2>
+                <p>Back-end Developer with expertise in server-side technologies.</p>
+                <p>John@example.com</p>
+                <button>contact us</button>
+            </div>
+        </div>
+    </div>
+
+<div class="column">
+        <div class="card">
+            <img src="image.jpeg" alt="Alice">
+            <div class="container">
+            </div>
+            <h2>Alice Johnson</h2>
+            <p>Full Stack Developer with a knack for problem-solving.</p>
+            <p>alice@example.com</p>
+            <button>contact us</button>
+    </div>
+</div>
+
+<h1 style="text-align: start;">contact us in our socials</h1>
+</body>
+</html>
