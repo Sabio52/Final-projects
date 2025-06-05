@@ -3,9 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About page</title>
 
 <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
     html{
         box-sizing: inherit;
     }
@@ -23,7 +29,7 @@
         width: 100%;
         padding: 15px;
         display: flex;
-        gap: 10px;
+        gap: 7px;
         flex-direction: column;
         align-items: center;
     }
@@ -33,6 +39,7 @@
         background-color: dimgray;
         color: white;
         font-family: Arial, sans-serif;
+        margin: 0;
     }
     .card img {
         width: 100%;
@@ -42,16 +49,27 @@
         background-color: #fa8704;
         color: white;
         padding: 10px 20px;
-        border: none;
         cursor: pointer;
         font-size: 16px;
-        width: 100%;
+        width: 70%;
+        border-radius: 13px;
+        border: 3px solid #000000;
     }
     .row{
         display: flex;
         flex-wrap: wrap;
         padding: 0px 4px;
         justify-content: space-around;
+    }
+    .social {
+        background-color: #000000;
+        color: white;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 16px;
+        width: 70%;
+        border-radius: 13px;
+        border: 3px solid #fa8704;
     }
 </style>
 
@@ -102,5 +120,36 @@
 </div>
 
 <h1 style="text-align: start;">contact us in our socials</h1>
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <img src="image.jpeg" alt="Facebook">
+            <div class="container">
+            </div>
+            <h2>Facebook</h2>
+            <p>Follow us on Facebook for updates and news.</p>
+            <button class="social">contact us</button>
+        </div>
+    </div>
+    <div class="column">
+        <div class="card">
+            <img src="image.jpeg" alt="Twitter">
+            <div class="container">
+            </div>
+            <h2>Twitter</h2>
+            <p>Stay connected with us on Twitter.</p>
+            <button class="social">contact us</button>
+        </div>
+    </div>
+    <div class="column">
+        <div class="card">
+            <img src="image.jpeg" alt="Instagram">
+            <div class="container">
+            </div>
+            <h2>Instagram</h2>
+            <p>Check out our latest photos on Instagram.</p>
+            <button class="social">contact us</button>
+        </div>
+    </div>
 </body>
 </html>
