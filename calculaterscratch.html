@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #3a3939;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .frame {
+            width: 300px;
+            height: 400px;
+            background-color: #222222;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            box-shadow: 0px 0px 20px 2px #008f8f;
+        }
+        .display {
+             width: 100%;
+             box-sizing: border-box;
+             height: 50px;
+             color: #000;
+            font-size: 24px;
+            text-align: right;
+            padding-right: 10px;
+            border-radius: 10px;
+            background: #495844;
+            margin-bottom: 15px;
+            border: none;
+        }
+        .btn input {
+             width: calc(25% - 8px);
+            width: 60px;
+            height: 60px;
+            font-size: 18px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            border: none;
+            border-radius: 10px;
+        }
+        .btn input:hover {
+            background-color: #008f8f;
+            color: white;
+            box-shadow: 0px 0px 10px 2px #ffffff;
+            cursor: pointer;
+        }
+        .btn input.special {
+            background-color: #008f8f;
+            color: white;
+            box-shadow: 0px 0px 10px 2px #ffffff;
+        }
+        .btn input.s2 {
+            color: white;
+            background-color: #008f8f;
+            box-shadow: 0px 0px 10px 2px #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="frame">
+        <input type="text" name="result" id="result" class="display" readonly>
+        <br>
+        <div class="btn">
+            <input type="button" value="C" class="s2" onclick="result.value=''">
+            <input type="button" value="DEL" class="s2" onclick="result.value=result.value.slice(0,-1)">
+            <input type="button" value="." onclick="result.value+='.'">
+            <input type="button" value="/" class="special" onclick="result.value+='/'">
+            <br>
+            <input type="button" value="7" onclick="result.value+='7'">
+            <input type="button" value="8" onclick="result.value+='8'">
+            <input type="button" value="9" onclick="result.value+='9'">
+            <input type="button" value="x" class="special" onclick="result.value+='*'">
+            <br>
+            <input type="button" value="4" onclick="result.value+='4'">
+            <input type="button" value="5" onclick="result.value+='5'">
+            <input type="button" value="6" onclick="result.value+='6'">
+            <input type="button" value="-" class="special" onclick="result.value+='-'">
+            <br>
+            <input type="button" value="1" onclick="result.value+='1'">
+            <input type="button" value="2" onclick="result.value+='2'">
+            <input type="button" value="3" onclick="result.value+='3'">
+            <input type="button" value="+" class="special" onclick="result.value+='+'">
+            <br>
+            <input type="button" value="0" onclick="result.value+='0'">
+            <input type="button" value="00" onclick="result.value+='00'">
+            <input type="button" value="%" class="special" onclick="result.value+='%'">
+            <input type="button" value="=" class="special" onclick="try{result.value=eval(result.value)}catch(e){result.value='Error'}">
+        </div>
+        <p style="color: #ffffff;">calculator made with simple javascript</p>
+    </div>
+</body>
+</html>
