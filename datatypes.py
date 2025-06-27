@@ -1,3 +1,6 @@
+
+# Data types
+# string, integer, float, boolean
 name = 'Sabit'
 age = 14
 weight = 50.0
@@ -37,7 +40,7 @@ print("is num1 greater than num2?", num1 > num2)
 print("is num1 less than num2?", num1 < num2)
 print("is num1 greater than or equal to num2?", num1 > num2)
 print("square of num1 is", num1 ** 2)
-
+# string operations
 first_name = "Sabit"
 last_name = "Hossain"
 full_name = first_name + " " + last_name
@@ -51,3 +54,14 @@ print("lenght of full name is", len(full_name))
 print("first character of full name is", full_name[0])
 print("last character of full name is", full_name[-1])
 print("string slicing:", full_name[0:3])
+
+# string swapping 
+x = input("Enter first string: ")
+y = input("Enter second string: ")
+z = input("Enter third string: ")
+
+z ,x, y = y, x, z
+print("After swapping:") 
+print("First string:", y)
+print("Second string:", z)
+print("Third string:", x)
