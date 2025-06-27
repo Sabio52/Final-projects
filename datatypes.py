@@ -21,3 +21,18 @@ print("After type casting:")
 print("data type of name is", type(name))
 print("data type of age is", type(age))
 print("data type of weight is", type(weight))
+
+num1 = 10
+num2 = 20
+
+print("num1 + num2 =", num1 + num2)
+print("num1 - num2 =", num1 - num2)
+print("num1 * num2 =", num1 * num2)
+print("num1 / num2 =", num1 / num2)
+
+print("are they equal?", num1 == num2)
+print("are they not equal?", num1 != num2)
+print("is num1 greater than num2?", num1 > num2)
+print("is num1 less than num2?", num1 < num2)
+print("is num1 greater than or equal to num2?", num1 > num2)
+print("square of num1 is", num1 ** 2)
