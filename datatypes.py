@@ -21,7 +21,8 @@ print("After type casting:")
 print("data type of name is", type(name))
 print("data type of age is", type(age))
 print("data type of weight is", type(weight))
-
+# operators
+# arithmetic operators
 num1 = 10
 num2 = 20
 
@@ -36,3 +37,17 @@ print("is num1 greater than num2?", num1 > num2)
 print("is num1 less than num2?", num1 < num2)
 print("is num1 greater than or equal to num2?", num1 > num2)
 print("square of num1 is", num1 ** 2)
+
+first_name = "Sabit"
+last_name = "Hossain"
+full_name = first_name + " " + last_name
+multiple_words = "ha"
+
+print("My first name is", first_name)
+print("My last name is", last_name)
+print("My full name is", full_name)
+print("multiplication of strings:", multiple_words * 3)
+print("lenght of full name is", len(full_name))
+print("first character of full name is", full_name[0])
+print("last character of full name is", full_name[-1])
+print("string slicing:", full_name[0:3])
