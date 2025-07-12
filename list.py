@@ -16,3 +16,16 @@ first.pop(2)
 print("After popping:", first)
 first.clear()
 print("After clearing the list:", first)
+
+# next activity
+
+info = {"name": "John", "age": 30, "city": "New York"}
+print("details in info:", info)
+info["country"] = "bangladesh"
+print("After adding country:", info)
+info["age"] = 31
+print("After updating age:", info)
+info.pop("city")
+print("After removing city:", info)
+info.clear()
+print("After clearing info:", info)
