@@ -29,3 +29,17 @@ info.pop("city")
 print("After removing city:", info)
 info.clear()
 print("After clearing info:", info)
+
+# next activity
+
+def test(lst):
+    result = {}
+    for item in lst:
+        result[item[0]] = item[1:]
+    return result
+
+
+students = [[1, "John", 25], [2, "Jane", 22], [3, "Doe", 23]]
+
+print("original list:", students)
+print("converted dictionary:", test(students))
