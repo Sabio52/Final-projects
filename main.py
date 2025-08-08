@@ -1,4 +1,11 @@
 file = open("filetest.txt", "r")
-
-print(file.read())
+print("Reading file content:")
+print(file.readline())
+print("Reading all lines:")
+print(file.readlines())
+print(file.readlines())
+print(file.readlines())
+print("Reading file line by line:")
+for line in file:
+    print(line)
 file.close()
